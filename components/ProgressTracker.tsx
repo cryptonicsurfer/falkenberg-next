@@ -35,14 +35,14 @@ const events: TimelineEvent[] = [
   },
   {
     year: '2025',
-    quarter: 'Q1',
+    quarter: 'Q4',
     title: 'Utbyggnad Startar',
     description: 'Byggstart för ytterligare lokaler och mötesplatser.',
     status: 'planned'
   },
   {
-    year: '2025',
-    quarter: 'Q3',
+    year: '2026',
+    quarter: 'Q2',
     title: 'Service & Restauranger',
     description: 'Etablering av restauranger, caféer, gym och annan service.',
     status: 'planned'
@@ -88,18 +88,18 @@ export default function ProgressTracker() {
   };
 
   return (
-    <section id="progress" className="bg-gradient-to-b from-purple-light to-purple-bg py-20" ref={ref}>
-      <div className="max-w-7xl mx-auto px-8">
+    <section id="progress" className="bg-gradient-to-b from-purple-light to-purple-bg py-12 md:py-20" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-6xl md:text-8xl text-dark-text mb-4">
+          <h2 className="text-4xl md:text-8xl text-dark-text mb-4">
             PROJEKTET <span className="text-yellow-bright">FRAMÅT</span>
           </h2>
-          <p className="text-xl text-dark-text/80">
+          <p className="text-base md:text-xl text-dark-text/80">
             Följ utvecklingen av Falkenberg NEXT över tid
           </p>
         </motion.div>

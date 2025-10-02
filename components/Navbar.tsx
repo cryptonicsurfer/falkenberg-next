@@ -1,10 +1,12 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,7 @@ export default function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -32,14 +35,15 @@ export default function Navbar() {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="text-2xl font-montserrat font-black text-dark-text cursor-pointer"
+          className="text-lg md:text-2xl font-montserrat font-black text-dark-text cursor-pointer"
         >
           FALKENBERG NEXT
         </motion.div>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <NavLink onClick={() => scrollToSection('insights')}>
             Insikter
@@ -51,7 +55,49 @@ export default function Navbar() {
             Kontakt
           </NavLink>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="md:hidden text-dark-text p-2"
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200"
+          >
+            <div className="px-4 py-4 flex flex-col gap-4">
+              <button
+                onClick={() => scrollToSection('insights')}
+                className="text-dark-text font-medium text-left py-2 hover:text-yellow-bright transition-colors"
+              >
+                Insikter
+              </button>
+              <button
+                onClick={() => scrollToSection('progress')}
+                className="text-dark-text font-medium text-left py-2 hover:text-yellow-bright transition-colors"
+              >
+                Utveckling
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-dark-text font-medium text-left py-2 hover:text-yellow-bright transition-colors"
+              >
+                Kontakt
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }

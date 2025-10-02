@@ -73,23 +73,23 @@ export default function InteractiveMap() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-purple-bg to-purple-light py-20" ref={ref}>
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="bg-gradient-to-br from-purple-bg to-purple-light py-12 md:py-20" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-6xl md:text-8xl text-dark-text mb-4">
+          <h2 className="text-4xl md:text-8xl text-dark-text mb-4">
             INTERAKTIV KARTA
           </h2>
-          <p className="text-xl text-dark-text">
+          <p className="text-base md:text-xl text-dark-text">
             Utforska området och se vad som händer var
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
           {/* Map */}
           <div className="lg:col-span-2">
             <Tilt
@@ -179,9 +179,9 @@ export default function InteractiveMap() {
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="bg-white rounded-xl p-6 shadow-xl"
+              className="bg-white rounded-xl p-4 md:p-6 shadow-xl"
             >
-              <h3 className="text-2xl font-montserrat font-black text-dark-text mb-6">
+              <h3 className="text-xl md:text-2xl font-montserrat font-black text-dark-text mb-4 md:mb-6">
                 {selectedMarker ? selectedMarker.title : 'Klicka på en punkt'}
               </h3>
 

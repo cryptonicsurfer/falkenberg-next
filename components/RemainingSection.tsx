@@ -10,16 +10,16 @@ import ImageCarousel from './ImageCarousel';
 export function DeveloperCallout() {
   return (
     <section className="bg-purple-light">
-      <div className="max-w-7xl mx-auto px-8 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection direction="left">
-            <h2 className="text-6xl md:text-7xl leading-tight text-dark-text">
+            <h2 className="text-4xl md:text-7xl leading-tight text-dark-text">
               ÄR DU EN FASTIGHETS-UTVECKLARE SOM VILL MER?
             </h2>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2} direction="right">
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               Då har du kommit rätt. Vi letar efter fastighetsutvecklare som blickar framåt.
               Som vill bygga något större och lägga grunden för en spännande framtid – tillsammans
               med oss i Falkenberg.
@@ -33,28 +33,28 @@ export function DeveloperCallout() {
 
 export function ReadySetBuild() {
   return (
-    <section className="bg-yellow-bright py-20">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-12">
+    <section className="bg-yellow-bright py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div className="space-y-8 md:space-y-12">
             <AnimatedSection>
-              <h2 className="text-7xl md:text-9xl leading-[0.9] text-dark-text">
+              <h2 className="text-4xl md:text-8xl leading-[1.1] text-white">
                 KLARA.<br/>FÄRDIGA.<br/>BYGG.
               </h2>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2} direction="left">
               <div className="space-y-4">
-                <p className="text-lg">
+                <p className="text-base md:text-lg">
                   Falkenberg NEXT omfattar 27 000 kvm med färdig detaljplan och generösa byggrätter
                   för centrum- och kontorsbyggnader på upp till sju våningar.
                 </p>
-                <p className="text-lg">
+                <p className="text-base md:text-lg">
                   Här planeras en levande mötesplats med kontor och co-working, plats för restauranger,
                   caféer, gym och annan service. Allt i direkt anslutning till Falkenbergs station.
                 </p>
                 <motion.p
-                  className="text-xl font-bold mt-6"
+                  className="text-lg md:text-xl font-bold mt-6"
                   whileHover={{ x: 10, color: '#A191B9' }}
                   transition={{ duration: 0.3 }}
                 >
@@ -102,11 +102,11 @@ export function FiveReasons() {
   ];
 
   return (
-    <section className="bg-purple-light py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid md:grid-cols-2 gap-12">
+    <section className="bg-purple-light py-12 md:py-20 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <AnimatedSection>
-            <h2 className="text-6xl md:text-8xl text-dark-text">
+            <h2 className="text-4xl md:text-8xl text-dark-text">
               FEM SKÄL ATT BYGGA HÄR
             </h2>
           </AnimatedSection>
@@ -144,15 +144,15 @@ export function FiveReasons() {
 
 export function WestCoastLocation() {
   return (
-    <section className="bg-[#D9D2E9] py-20">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section className="bg-[#D9D2E9] py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <div>
             <AnimatedSection direction="left">
-              <h2 className="text-6xl md:text-8xl text-dark-text mb-6 leading-tight">
+              <h2 className="text-4xl md:text-7xl text-dark-text mb-6 leading-tight">
                 MITT PÅ<br/>VÄSTKUSTEN
               </h2>
-              <p className="text-lg max-w-[65ch]">
+              <p className="text-base md:text-lg max-w-[65ch]">
                 Det tillgängliga läget, mitt på västkusten, kunde knappast vara bättre.
                 Falkenberg NEXT ligger på smidigt avstånd för bolag, organisationer och talang
                 från hela västkusten.
@@ -161,30 +161,30 @@ export function WestCoastLocation() {
 
             <AnimatedSection delay={0.6} direction="left">
               <motion.div
-                className="mt-8 flex overflow-visible"
+                className="mt-8 flex overflow-visible max-w-full"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.5, type: 'spring', bounce: 0.4 }}
               >
-                <div className="bg-yellow-bright px-8 py-6 flex items-center justify-center shadow-xl"
+                <div className="bg-yellow-bright px-4 md:px-8 py-4 md:py-6 flex items-center justify-center shadow-xl"
                      style={{ clipPath: 'polygon(100% 0, 100% 100%, 30px 100%, 0% 50%, 30px 0)' }}>
-                  <h3 className="text-2xl font-montserrat font-black text-dark-text whitespace-nowrap">
+                  <h3 className="text-lg md:text-2xl font-montserrat font-black text-dark-text whitespace-nowrap">
                     FALKENBERG
                   </h3>
                 </div>
-                <div className="px-8 py-4 flex-1 whitespace-nowrap bg-white rounded-r-lg shadow-xl">
-                  <p className="text-sm font-bold mb-2 text-dark-text">Restider Västkustbanan</p>
-                  <p className="text-xs text-dark-text mb-1">Halmstad–Falkenberg: ~20 min</p>
-                  <p className="text-xs text-dark-text mb-1">Göteborg–Falkenberg: ~1h</p>
-                  <p className="text-xs text-dark-text">Malmö–Falkenberg: ~2h</p>
+                <div className="px-4 md:px-8 py-3 md:py-4 flex-1 bg-white rounded-r-lg shadow-xl min-w-0">
+                  <p className="text-xs md:text-sm font-bold mb-2 text-dark-text">Restider Västkustbanan</p>
+                  <p className="text-[10px] md:text-xs text-dark-text mb-1">Halmstad–Falkenberg: ~20 min</p>
+                  <p className="text-[10px] md:text-xs text-dark-text mb-1">Göteborg–Falkenberg: ~1h</p>
+                  <p className="text-[10px] md:text-xs text-dark-text">Malmö–Falkenberg: ~2h</p>
                 </div>
               </motion.div>
             </AnimatedSection>
           </div>
 
           <AnimatedSection delay={0.3} direction="right">
-            <div className="bg-[#b9a7d1] rounded-xl p-8 shadow-2xl aspect-[3/4] max-h-[600px] flex items-center justify-center">
+            <div className="bg-[#b9a7d1] rounded-xl p-6 md:p-8 shadow-2xl aspect-[3/4] max-h-[500px] md:max-h-[600px] flex items-center justify-center">
               <WestCoastMapSVG />
             </div>
           </AnimatedSection>
@@ -196,27 +196,27 @@ export function WestCoastLocation() {
 
 export function GrowWithFalkenberg() {
   return (
-    <section className="bg-yellow-bright py-20">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="bg-yellow-bright py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <AnimatedSection>
-          <div className="text-center mb-12">
-            <h2 className="text-6xl md:text-8xl text-dark-text leading-tight">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-4xl md:text-8xl text-dark-text leading-tight">
               VÄX MED<br/>
               FALKENBERG
             </h2>
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection delay={0.2} direction="left">
             <div className="space-y-4">
-              <p className="text-lg">
+              <p className="text-base md:text-lg">
                 Falkenberg är en stor småstad med djärva ambitioner och siktar på att ha 50 000
                 invånare 2030. Här finns en positiv attityd, stark vilja och ett driv framåt.
                 Vi rankas redan högt när det kommer till bra företagsklimat men strävar efter att
                 bli Sveriges bästa näringslivskommun.
               </p>
-              <p className="text-lg">
+              <p className="text-base md:text-lg">
                 Här händer det saker. Inte nog med att Västsverige hamnar på 10:e plats i
                 EU-kommissionens ranking över Europas mest innovativa regioner – Halland rankas
                 som Sveriges mest attraktiva region att leva och bo i och har Sveriges snabbaste
@@ -251,27 +251,27 @@ export function GrowWithFalkenberg() {
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-purple-bg py-20">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+    <section id="contact" className="bg-purple-bg py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <AnimatedSection direction="left">
-            <h2 className="text-7xl md:text-9xl text-white leading-[0.9] mb-8">
+            <h2 className="text-5xl md:text-9xl text-white leading-[0.9] mb-6 md:mb-8">
               VI<br/>HÖRS!
             </h2>
 
             <div className="space-y-6 text-white">
               <div>
-                <h3 className="text-2xl font-montserrat font-black mb-2">Mattias Fornell</h3>
-                <p>Näringslivsutvecklare<br/>Etablera & Expandera<br/>070-231 88 40<br/>mattias.fornell@falkenberg.se</p>
+                <h3 className="text-xl md:text-2xl font-montserrat font-black mb-2">Mattias Fornell</h3>
+                <p className="text-sm md:text-base">Näringslivsutvecklare<br/>Etablera & Expandera<br/>070-231 88 40<br/>mattias.fornell@falkenberg.se</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-montserrat font-black mb-2">Emma Carlström</h3>
-                <p>Näringslivschef<br/>070-208 56 03<br/>emma.carlstrom@falkenberg.se</p>
+                <h3 className="text-xl md:text-2xl font-montserrat font-black mb-2">Emma Carlström</h3>
+                <p className="text-sm md:text-base">Näringslivschef<br/>070-208 56 03<br/>emma.carlstrom@falkenberg.se</p>
               </div>
 
               <motion.p
-                className="text-xl font-bold mt-6"
+                className="text-lg md:text-xl font-bold mt-6"
                 whileHover={{ x: 10 }}
                 transition={{ duration: 0.3 }}
               >
@@ -322,17 +322,17 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="bg-yellow-bright px-8 py-8">
+    <footer className="bg-yellow-bright px-4 md:px-8 py-6 md:py-8">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
         <div>
-          <h3 className="text-3xl font-montserrat font-black text-dark-text">FALKENBERG NEXT</h3>
-          <p className="font-montserrat font-black text-dark-text">falkenbergväxer.se</p>
+          <h3 className="text-xl md:text-3xl font-montserrat font-black text-dark-text">FALKENBERG NEXT</h3>
+          <p className="text-sm md:text-base font-montserrat font-black text-dark-text">falkenbergväxer.se</p>
         </div>
 
         <motion.div
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ type: 'spring', stiffness: 300 }}
-          className="relative w-[120px] h-[60px]"
+          className="relative w-[100px] md:w-[120px] h-[50px] md:h-[60px]"
         >
           <Image
             src="/images/falkenberg-kommun-logo.png"

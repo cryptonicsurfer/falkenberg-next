@@ -65,7 +65,7 @@ export default function MetricsDashboard() {
     <div ref={ref}>
       <div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {metrics.map((metric, index) => (
             <motion.div
               key={index}
@@ -82,7 +82,7 @@ export default function MetricsDashboard() {
                 rotate: [0, -2, 2, -2, 0],
                 transition: { duration: 0.3 }
               }}
-              className="bg-white rounded-xl p-8 shadow-2xl hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
+              className="bg-white rounded-xl p-6 md:p-8 shadow-2xl hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
             >
               {/* Animated background gradient */}
               <motion.div
@@ -101,11 +101,11 @@ export default function MetricsDashboard() {
                 }}
               />
 
-              <div className="mb-4">
-                <metric.icon className="w-16 h-16 text-purple-bg stroke-[1.5]" />
+              <div className="mb-3 md:mb-4">
+                <metric.icon className="w-12 md:w-16 h-12 md:h-16 text-purple-bg stroke-[1.5]" />
               </div>
 
-              <div className="text-5xl font-montserrat font-black text-purple-bg mb-2">
+              <div className="text-4xl md:text-5xl font-montserrat font-black text-purple-bg mb-2">
                 {inView && (
                   <CountUp
                     end={metric.value}
@@ -116,11 +116,11 @@ export default function MetricsDashboard() {
                 )}
               </div>
 
-              <h3 className="text-xl font-montserrat font-black text-dark-text mb-2">
+              <h3 className="text-lg md:text-xl font-montserrat font-black text-dark-text mb-2">
                 {metric.label}
               </h3>
 
-              <p className="text-dark-text/70">
+              <p className="text-sm md:text-base text-dark-text/70">
                 {metric.description}
               </p>
             </motion.div>

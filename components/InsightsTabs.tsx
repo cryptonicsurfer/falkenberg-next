@@ -26,24 +26,24 @@ export default function InsightsTabs() {
   ];
 
   return (
-    <section id="insights" className="bg-yellow-bright py-20" ref={ref}>
-      <div className="max-w-7xl mx-auto px-8">
+    <section id="insights" className="bg-yellow-bright py-12 md:py-20" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-6xl md:text-8xl text-dark-text mb-4">
+          <h2 className="text-4xl md:text-8xl text-white mb-4">
             INSIKTER & DATA
           </h2>
-          <p className="text-xl text-dark-text/80">
+          <p className="text-base md:text-xl text-dark-text/80">
             Utforska projektets utveckling och framsteg
           </p>
         </motion.div>
 
         {/* Two column layout: Image left, Tabs right */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left: Static Image with sticky */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

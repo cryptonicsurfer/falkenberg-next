@@ -8,18 +8,18 @@ export default function Hero() {
   return (
     <header className="flex flex-wrap bg-purple-bg border-b-4 border-dark-text relative overflow-hidden">
       <motion.div
-        className="flex-1 p-8 md:p-16 min-w-[300px] self-center"
+        className="flex-1 p-6 md:p-16 min-w-0 self-center w-full md:w-auto"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         <motion.h1
-          className="text-7xl md:text-9xl leading-[0.9] text-yellow-bright mb-8"
+          className="text-5xl md:text-8xl leading-[1.1] md:leading-[0.9] text-yellow-bright mb-6 md:mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          NU<br/><br/>ÅKER<br/><br/>VI!
+          NU<br/>ÅKER<br/>VI!
         </motion.h1>
 
         <motion.div
@@ -27,11 +27,11 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-lg mb-4 mt-8">
+          <p className="text-base md:text-lg mb-4">
             En byggnad är färdig, en annan planeras. Området kring stationen börjar ta form.
             <strong> Falkenberg NEXT händer nu.</strong>
           </p>
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             Därför söker vi fastighetsutvecklare som med kunskap, erfarenhet och driv vill hjälpa oss
             att flytta gränserna för vad som är möjligt för Falkenberg, Halland, Västkusten och Sverige.
           </p>
@@ -39,7 +39,7 @@ export default function Hero() {
       </motion.div>
 
       <Tilt
-        className="flex-[1.5] min-w-[400px] overflow-hidden"
+        className="flex-[1.5] w-full md:min-w-[400px] overflow-hidden"
         tiltMaxAngleX={5}
         tiltMaxAngleY={5}
         perspective={1000}
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="h-full relative min-h-[500px]"
+          className="h-full relative min-h-[300px] md:min-h-[500px]"
         >
           <Image
             src="/images/hero-image.jpg"
