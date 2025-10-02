@@ -17,6 +17,20 @@ export const metadata: Metadata = {
     description: "En ny stationsnära stadsdel full av drömmar",
     type: "website",
     locale: "sv_SE",
+    images: [
+      {
+        url: '/images/hero-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Falkenberg NEXT - Illustrationsbild av White Arkitekter',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Falkenberg NEXT - Väx med Falkenberg",
+    description: "En ny stationsnära stadsdel full av drömmar",
+    images: ['/images/hero-image.jpg'],
   },
 };
 
