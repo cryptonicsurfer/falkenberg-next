@@ -190,9 +190,7 @@ export default function InsightsTabs() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gradient-to-br from-yellow-bright/10 to-purple-light/10 rounded-xl p-8">
-                <MetricsDashboard />
-              </div>
+              <MetricsDashboard />
             </motion.div>
           )}
             </AnimatePresence>

@@ -82,7 +82,7 @@ export default function MetricsDashboard() {
                 rotate: [0, -2, 2, -2, 0],
                 transition: { duration: 0.3 }
               }}
-              className="bg-white rounded-xl p-8 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-300 relative overflow-hidden border-2 border-dark-text"
+              className="bg-white rounded-xl p-8 shadow-2xl hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
             >
               {/* Animated background gradient */}
               <motion.div
