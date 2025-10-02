@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="text-2xl font-anton text-dark-text cursor-pointer"
+          className="text-2xl font-montserrat font-black text-dark-text cursor-pointer"
         >
           FALKENBERG NEXT
         </motion.div>

@@ -6,19 +6,19 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_35AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_36AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_37AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_38AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_39AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_46AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_47AM-2.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_47AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_48AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_49AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_53AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 6_59AM.png',
-  '/images/carousel_images/Generated Image September 30, 2025 - 7_00AM.png',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_35AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_36AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_37AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_38AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_39AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_46AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_47AM-2.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_47AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_48AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_49AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_53AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 6_59AM.jpg',
+  '/images/carousel_images/Generated Image September 30, 2025 - 7_00AM.jpg',
 ];
 
 export default function ImageCarousel() {

@@ -105,7 +105,7 @@ export default function MetricsDashboard() {
                 <metric.icon className="w-16 h-16 text-purple-bg stroke-[1.5]" />
               </div>
 
-              <div className="text-5xl font-anton text-purple-bg mb-2">
+              <div className="text-5xl font-montserrat font-black text-purple-bg mb-2">
                 {inView && (
                   <CountUp
                     end={metric.value}
@@ -116,7 +116,7 @@ export default function MetricsDashboard() {
                 )}
               </div>
 
-              <h3 className="text-xl font-anton text-dark-text mb-2">
+              <h3 className="text-xl font-montserrat font-black text-dark-text mb-2">
                 {metric.label}
               </h3>
 

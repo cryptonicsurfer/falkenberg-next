@@ -114,7 +114,7 @@ export default function InsightsTabs() {
                 <div className="mb-4">
                   <Construction className="w-16 h-16 stroke-[1.5]" />
                 </div>
-                <h3 className="text-2xl font-anton mb-3">Projektstatus</h3>
+                <h3 className="text-2xl font-montserrat font-black mb-3">Projektstatus</h3>
                 <p className="mb-4">
                   Första byggnaden är klar, planering av fas 2 pågår. Detaljplan och byggrätter finns på plats.
                 </p>
@@ -134,7 +134,7 @@ export default function InsightsTabs() {
                 <div className="mb-4">
                   <TrendingUp className="w-16 h-16 text-dark-text stroke-[1.5]" />
                 </div>
-                <h3 className="text-2xl font-anton mb-3 text-dark-text">Nyckeltal</h3>
+                <h3 className="text-2xl font-montserrat font-black mb-3 text-dark-text">Nyckeltal</h3>
                 <p className="text-dark-text mb-4">
                   27 000 kvm projektarea, upp till 7 våningar, direkt vid station och motorväg.
                 </p>
@@ -154,7 +154,7 @@ export default function InsightsTabs() {
                 <div className="mb-4">
                   <Target className="w-16 h-16 text-purple-bg stroke-[1.5]" />
                 </div>
-                <h3 className="text-2xl font-anton mb-3 text-dark-text">Möjligheter</h3>
+                <h3 className="text-2xl font-montserrat font-black mb-3 text-dark-text">Möjligheter</h3>
                 <p className="text-dark-text mb-4">
                   Perfekt läge för kontorslokaler, co-working, service och restauranger i växande stadsdel.
                 </p>

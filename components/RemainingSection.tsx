@@ -131,7 +131,7 @@ export function FiveReasons() {
 
       {/* Large background number */}
       <motion.div
-        className="absolute right-0 top-1/2 -translate-y-1/2 text-[30rem] font-anton text-white/40 pointer-events-none select-none"
+        className="absolute right-0 top-1/2 -translate-y-1/2 text-[30rem] font-montserrat font-black text-white/40 pointer-events-none select-none"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 0.4 }}
         viewport={{ once: true }}
@@ -166,11 +166,11 @@ export function WestCoastLocation() {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 5, type: 'spring', bounce: 0.4 }}
+                transition={{ duration: 0.6, delay: 0.5, type: 'spring', bounce: 0.4 }}
               >
                 <div className="bg-yellow-bright px-8 py-6 flex items-center justify-center"
                      style={{ clipPath: 'polygon(100% 0, 100% 100%, 20px 100%, 0% 50%, 20px 0)' }}>
-                  <h3 className="text-2xl font-anton text-dark-text whitespace-nowrap">
+                  <h3 className="text-2xl font-montserrat font-black text-dark-text whitespace-nowrap">
                     FALKENBERG
                   </h3>
                 </div>
@@ -265,12 +265,12 @@ export function Contact() {
 
             <div className="space-y-6 text-white">
               <div>
-                <h3 className="text-2xl font-anton mb-2">Mattias Fornell</h3>
+                <h3 className="text-2xl font-montserrat font-black mb-2">Mattias Fornell</h3>
                 <p>Näringslivsutvecklare<br/>Etablera & Expandera<br/>070-231 88 40<br/>mattias.fornell@falkenberg.se</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-anton mb-2">Emma Carlström</h3>
+                <h3 className="text-2xl font-montserrat font-black mb-2">Emma Carlström</h3>
                 <p>Näringslivschef<br/>070-208 56 03<br/>emma.carlstrom@falkenberg.se</p>
               </div>
 
@@ -329,8 +329,8 @@ export function Footer() {
     <footer className="bg-yellow-bright px-8 py-8">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
         <div>
-          <h3 className="text-3xl font-anton text-dark-text">FALKENBERG NEXT</h3>
-          <p className="font-anton text-dark-text">falkenbergväxer.se</p>
+          <h3 className="text-3xl font-montserrat font-black text-dark-text">FALKENBERG NEXT</h3>
+          <p className="font-montserrat font-black text-dark-text">falkenbergväxer.se</p>
         </div>
 
         <motion.div

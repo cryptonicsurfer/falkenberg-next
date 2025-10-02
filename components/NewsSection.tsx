@@ -141,7 +141,7 @@ export default function NewsSection() {
                 </span>
               </div>
 
-              <h3 className="text-2xl font-anton text-dark-text mb-3">
+              <h3 className="text-2xl font-montserrat font-black text-dark-text mb-3">
                 {item.title}
               </h3>
 

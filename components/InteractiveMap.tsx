@@ -181,7 +181,7 @@ export default function InteractiveMap() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="bg-white rounded-xl p-6 shadow-xl"
             >
-              <h3 className="text-2xl font-anton text-dark-text mb-6">
+              <h3 className="text-2xl font-montserrat font-black text-dark-text mb-6">
                 {selectedMarker ? selectedMarker.title : 'Klicka på en punkt'}
               </h3>
 
