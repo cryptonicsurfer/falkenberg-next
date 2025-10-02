@@ -161,19 +161,19 @@ export function WestCoastLocation() {
 
             <AnimatedSection delay={0.6} direction="left">
               <motion.div
-                className="mt-8 bg-white rounded-lg shadow-xl flex max-w-md"
+                className="mt-8 flex overflow-visible"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.5, type: 'spring', bounce: 0.4 }}
               >
-                <div className="bg-yellow-bright px-8 py-6 flex items-center justify-center"
-                     style={{ clipPath: 'polygon(100% 0, 100% 100%, 20px 100%, 0% 50%, 20px 0)' }}>
+                <div className="bg-yellow-bright px-8 py-6 flex items-center justify-center shadow-xl"
+                     style={{ clipPath: 'polygon(100% 0, 100% 100%, 30px 100%, 0% 50%, 30px 0)' }}>
                   <h3 className="text-2xl font-montserrat font-black text-dark-text whitespace-nowrap">
                     FALKENBERG
                   </h3>
                 </div>
-                <div className="px-6 py-4 flex-1">
+                <div className="px-8 py-4 flex-1 whitespace-nowrap bg-white rounded-r-lg shadow-xl">
                   <p className="text-sm font-bold mb-2 text-dark-text">Restider Västkustbanan</p>
                   <p className="text-xs text-dark-text mb-1">Halmstad–Falkenberg: ~20 min</p>
                   <p className="text-xs text-dark-text mb-1">Göteborg–Falkenberg: ~1h</p>
@@ -184,7 +184,7 @@ export function WestCoastLocation() {
           </div>
 
           <AnimatedSection delay={0.3} direction="right">
-            <div className="bg-[#b9a7d1] rounded-xl p-8 shadow-2xl h-[80vh] flex items-center justify-center">
+            <div className="bg-[#b9a7d1] rounded-xl p-8 shadow-2xl aspect-[3/4] max-h-[600px] flex items-center justify-center">
               <WestCoastMapSVG />
             </div>
           </AnimatedSection>

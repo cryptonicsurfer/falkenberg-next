@@ -97,7 +97,7 @@ export default function ProgressTracker() {
           className="text-center mb-16"
         >
           <h2 className="text-6xl md:text-8xl text-dark-text mb-4">
-            PROJEKTET <span className="gradient-text">FRAMÅT</span>
+            PROJEKTET <span className="text-yellow-bright">FRAMÅT</span>
           </h2>
           <p className="text-xl text-dark-text/80">
             Följ utvecklingen av Falkenberg NEXT över tid
@@ -128,20 +128,20 @@ export default function ProgressTracker() {
               {/* Content */}
               <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'} ml-16 md:ml-0`}>
                 <motion.div
-                  className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                   whileHover={{ scale: 1.05, rotate: index % 2 === 0 ? -1 : 1 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold text-white ${getStatusColor(event.status)}`}>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold text-white ${getStatusColor(event.status)}`}>
                       {getStatusLabel(event.status)}
                     </span>
-                    <span className="text-sm font-bold text-purple-bg">
+                    <span className="text-xs font-bold text-purple-bg">
                       {event.year} {event.quarter}
                     </span>
                   </div>
-                  <h3 className="text-2xl mb-2 text-dark-text">{event.title}</h3>
-                  <p className="text-dark-text/70">{event.description}</p>
+                  <h3 className="text-xl mb-1.5 text-dark-text">{event.title}</h3>
+                  <p className="text-sm text-dark-text/70">{event.description}</p>
                 </motion.div>
               </div>
 

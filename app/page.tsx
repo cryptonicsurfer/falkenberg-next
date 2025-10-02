@@ -4,7 +4,6 @@ import DreamBigger from '@/components/DreamBigger';
 import ProgressTracker from '@/components/ProgressTracker';
 import QualityOfLife from '@/components/QualityOfLife';
 import InsightsTabs from '@/components/InsightsTabs';
-import ConfettiEffect from '@/components/ConfettiEffect';
 import {
   DeveloperCallout,
   ReadySetBuild,
@@ -18,11 +17,10 @@ import {
 export default function Home() {
   return (
     <>
-      <ConfettiEffect />
       <Navbar />
       <main>
         <Hero />
-        <DreamBigger />
+        {/* <DreamBigger /> */}
         <QualityOfLife />
         <ProgressTracker />
         <InsightsTabs />
