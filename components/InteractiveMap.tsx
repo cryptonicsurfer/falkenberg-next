@@ -81,7 +81,7 @@ export default function InteractiveMap() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl md:text-8xl text-white mb-4" style={{ WebkitTextStroke: '2px #212121' }}>
+          <h2 className="text-6xl md:text-8xl text-dark-text mb-4">
             INTERAKTIV KARTA
           </h2>
           <p className="text-xl text-dark-text">

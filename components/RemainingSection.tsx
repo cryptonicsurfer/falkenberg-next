@@ -38,8 +38,7 @@ export function ReadySetBuild() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-12">
             <AnimatedSection>
-              <h2 className="text-7xl md:text-9xl leading-[0.9] text-white"
-                  style={{ WebkitTextStroke: '2px #212121' }}>
+              <h2 className="text-7xl md:text-9xl leading-[0.9] text-dark-text">
                 KLARA.<br/>FÄRDIGA.<br/>BYGG.
               </h2>
             </AnimatedSection>
@@ -203,9 +202,7 @@ export function GrowWithFalkenberg() {
           <div className="text-center mb-12">
             <h2 className="text-6xl md:text-8xl text-dark-text leading-tight">
               VÄX MED<br/>
-              <span className="text-white" style={{ WebkitTextStroke: '2px #212121' }}>
-                FALKENBERG
-              </span>
+              FALKENBERG
             </h2>
           </div>
         </AnimatedSection>
@@ -258,8 +255,7 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <AnimatedSection direction="left">
-            <h2 className="text-7xl md:text-9xl text-purple-light leading-[0.9] mb-8"
-                style={{ WebkitTextStroke: '2px white' }}>
+            <h2 className="text-7xl md:text-9xl text-white leading-[0.9] mb-8">
               VI<br/>HÖRS!
             </h2>
 
