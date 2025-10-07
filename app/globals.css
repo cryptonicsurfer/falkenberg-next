@@ -28,9 +28,13 @@
   scroll-behavior: smooth;
 }
 
-html, body {
+html {
   overflow-x: hidden;
+}
+
+body {
   max-width: 100vw;
+  position: relative;
 }
 
 body {
