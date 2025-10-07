@@ -111,7 +111,7 @@ export default function NewsSection() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
           layout
         >
           {filteredNews.map((item, index) => (
@@ -126,13 +126,13 @@ export default function NewsSection() {
                 y: -10,
                 boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
               }}
-              className="bg-purple-light/20 rounded-xl p-6 border-2 border-purple-light hover:border-purple-bg transition-colors duration-300"
+              className="bg-purple-light/20 rounded-xl p-4 md:p-6 border-2 border-purple-light hover:border-purple-bg transition-colors duration-300 flex flex-col min-h-[280px]"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <span className={`px-3 py-1 rounded-full text-xs font-bold ${categoryColors[item.category]} text-white`}>
+              <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4 flex-wrap">
+                <span className={`px-2 md:px-3 py-1 rounded-full text-xs font-bold ${categoryColors[item.category]} text-white whitespace-nowrap`}>
                   {categoryLabels[item.category]}
                 </span>
-                <span className="text-sm text-dark-text/60">
+                <span className="text-xs md:text-sm text-dark-text/60">
                   {new Date(item.date).toLocaleDateString('sv-SE', {
                     year: 'numeric',
                     month: 'long',
@@ -141,16 +141,16 @@ export default function NewsSection() {
                 </span>
               </div>
 
-              <h3 className="text-2xl font-montserrat font-black text-dark-text mb-3">
+              <h3 className="text-xl md:text-2xl font-montserrat font-black text-dark-text mb-2 md:mb-3 line-clamp-2">
                 {item.title}
               </h3>
 
-              <p className="text-dark-text/80">
+              <p className="text-sm md:text-base text-dark-text/80 line-clamp-3 flex-grow">
                 {item.excerpt}
               </p>
 
               <motion.div
-                className="mt-4 inline-flex items-center text-purple-bg font-bold cursor-pointer"
+                className="mt-4 inline-flex items-center text-purple-bg font-bold cursor-pointer text-sm md:text-base"
                 whileHover={{ x: 10 }}
               >
                 Läs mer →
