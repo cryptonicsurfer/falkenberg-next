@@ -74,7 +74,7 @@ export default function InteractiveMap() {
 
   return (
     <section className="bg-gradient-to-br from-purple-bg to-purple-light py-12 md:py-20" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

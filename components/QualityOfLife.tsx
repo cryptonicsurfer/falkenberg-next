@@ -8,7 +8,7 @@ import Tilt from 'react-parallax-tilt';
 export default function QualityOfLife() {
   return (
     <section className="bg-gradient-to-br from-purple-light/30 to-yellow-bright/20 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection direction="left">
             <Tilt

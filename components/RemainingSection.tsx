@@ -10,7 +10,7 @@ import ImageCarousel from './ImageCarousel';
 export function DeveloperCallout() {
   return (
     <section className="bg-purple-light">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection direction="left">
             <h2 className="text-4xl md:text-7xl leading-tight text-dark-text">
@@ -34,7 +34,7 @@ export function DeveloperCallout() {
 export function ReadySetBuild() {
   return (
     <section className="bg-yellow-bright py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <div className="space-y-8 md:space-y-12">
             <AnimatedSection>
@@ -103,7 +103,7 @@ export function FiveReasons() {
 
   return (
     <section className="bg-purple-light py-12 md:py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <AnimatedSection>
             <h2 className="text-4xl md:text-8xl text-dark-text">
@@ -145,7 +145,7 @@ export function FiveReasons() {
 export function WestCoastLocation() {
   return (
     <section className="bg-[#D9D2E9] py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <div>
             <AnimatedSection direction="left">
@@ -197,7 +197,7 @@ export function WestCoastLocation() {
 export function GrowWithFalkenberg() {
   return (
     <section className="bg-yellow-bright py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <AnimatedSection>
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-4xl md:text-8xl text-dark-text leading-tight">
@@ -252,7 +252,7 @@ export function GrowWithFalkenberg() {
 export function Contact() {
   return (
     <section id="contact" className="bg-purple-bg py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <AnimatedSection direction="left">
             <h2 className="text-5xl md:text-9xl text-white leading-[0.9] mb-6 md:mb-8">
@@ -322,7 +322,7 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="bg-yellow-bright px-4 md:px-8 py-6 md:py-8">
+    <footer className="bg-yellow-bright px-6 md:px-8 py-6 md:py-8">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
         <div>
           <h3 className="text-xl md:text-3xl font-montserrat font-black text-dark-text">FALKENBERG NEXT</h3>

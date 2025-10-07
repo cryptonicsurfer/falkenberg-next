@@ -35,7 +35,7 @@ export default function Navbar() {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between">
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="text-lg md:text-2xl font-montserrat font-black text-dark-text cursor-pointer"
