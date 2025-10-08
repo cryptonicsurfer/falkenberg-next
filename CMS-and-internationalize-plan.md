@@ -36,61 +36,86 @@
 
 ---
 
-## 🔄 Workflow
+## 🔄 Workflow (Super Enkelt!)
 
-### Variant A: Paul uppdaterar direkt
-```bash
-1. Öppna content/sv/hero.json i VSCode
-2. Ändra texten
-3. Kör: npm run translate
-4. Commit & push
-5. Auto-deploy
+### Så här funkar det:
+```
+1. Paul får updates från projektteamet
+   (email, telefon, meetings - ofta ostrukturerat/tal-språk)
+
+   Exempel:
+   "Hej! Förra veckan blev byggnaden klar, jättebra!
+    3 företag intresserade. Oj och kommunen godkände planen
+    i torsdags. Emma har ny telefon: 070-123..."
+
+2. Paul: "Här är lite updates från projektet:"
+   [copy/paste från email eller skriver sammanfattning]
+
+3. Claude: "Ok, jag ser:
+   📰 2 nyheter (byggnad klar + plan godkänd)
+   👤 Kontakt uppdatering (Emma ny telefon)
+   Stämmer det? Vilken kategori på första nyheten?"
+
+4. Paul: "Ja! Första är Byggnation"
+
+5. Claude:
+   ✓ Tolkar och strukturerar texten
+   ✓ Skapar snygga rubriker & excerpts
+   ✓ Uppdaterar /content/sv/*.json
+   ✓ Översätter till /content/en/*.json
+   ✓ Committar & deployar
+
+6. Klart! Båda språken uppdaterade på 2-3 minuter
 ```
 
-### Variant B: Paul ber Claude (enklast!)
+### Verkligt Exempel
 ```
-Paul: "Uppdatera hero-texten till 'Ny text här' och översätt"
+Paul: "Hej, här är vad som hänt:
 
-Claude:
-  ✓ Uppdaterar /content/sv/hero.json
-  ✓ Kör translation script
-  ✓ Uppdaterar /content/en/hero.json
-  ✓ Committar allt
-  ✓ Deployer
+Byggnaden vid stationen äntligen klar! Tre företag redan
+intresserade. Kommunen godkände detaljplan fas 2 i torsdags,
+siktar på byggstart mars 2025."
+
+Claude: "Perfekt! Jag tolkar det som:
+
+📰 Nyhet 1: 'Första byggnaden invigd' (Byggnation)
+📰 Nyhet 2: 'Detaljplan fas 2 godkänd' (Utveckling)
+📅 Timeline: 'Byggstart fas 2' (Mars 2025)
+
+Kör jag?"
+
+Paul: "Kör!"
+
+Claude: ✓ Skapar 2 nyheter med snygga rubriker
+        ✓ Lägger till timeline event
+        ✓ Översätter allt till engelska
+        ✓ Deployar
+
+        Klart! 🚀
 ```
 
 ---
 
-## 🤖 Translation Pipeline
+## 🤖 Translation & Content Parsing (Automatiskt!)
 
-### Setup
-```bash
-# Installera dependencies
-npm install @google/generative-ai dotenv
+### Inget script, inget API, inga dependencies!
 
-# Lägg till i .env.local
-GEMINI_API_KEY=your_key_here
-```
+**Claude hanterar:**
+- ✅ Tolkar ostrukturerade updates (email, tal-språk, meetings)
+- ✅ Strukturerar till snygga JSON-fält
+- ✅ Skapar rubriker och excerpts från "messy" text
+- ✅ Översätter till perfekt engelska
+- ✅ Rensar bort signatures, hälsningar, etc.
+- ✅ Frågar om oklarheter (kategori, datum, etc.)
 
-### Script: scripts/translate.js
-```javascript
-// Läser alla JSON-filer i /content/sv
-// För varje fil:
-//   - Skickar till Gemini 2.5 Flash
-//   - Översätter text (behåller struktur)
-//   - Sparar till /content/en/[samma-fil].json
-// Snabbt, billigt, bra kvalitet
-```
+**Du behöver aldrig:**
+- ❌ Skriva JSON själv
+- ❌ Tänka på struktur
+- ❌ Formatera text
+- ❌ Översätta manuellt
+- ❌ Committa eller deploya
 
-### NPM Commands
-```json
-{
-  "scripts": {
-    "translate": "node scripts/translate.js",
-    "translate:watch": "nodemon scripts/translate.js"
-  }
-}
-```
+**Bara copy/paste updates från teamet - Claude gör resten!**
 
 ---
 
@@ -214,11 +239,10 @@ import heroContent from '@/content/[locale]/hero.json';
 - [ ] Uppdatera komponenter att läsa från JSON
 - [ ] Testa att allt fungerar som innan
 
-### Phase 2: Translation Setup (1 timme)
-- [ ] Installera Gemini SDK
-- [ ] Skapa translation script
-- [ ] Testa översättning av en fil
+### Phase 2: Initial Translation (30 min)
+- [ ] Claude översätter all befintlig content till engelska
 - [ ] Generera alla EN-filer
+- [ ] Granska översättningarna
 
 ### Phase 3: i18n Routing (2 timmar)
 - [ ] Installera next-intl
@@ -238,22 +262,16 @@ import heroContent from '@/content/[locale]/hero.json';
 - [ ] Testa Open Graph för båda språk
 - [ ] Deploy till produktion
 
-**Total tid: ~6-7 timmar**
+**Total tid: ~5-6 timmar** (sparar 1 timme utan script setup!)
 
 ---
 
 ## 💰 Kostnad
 
-### Gemini 2.5 Flash API
-- **Input:** $0.075 per 1M tokens
-- **Output:** $0.30 per 1M tokens
+**$0** - Helt gratis! 🎉
 
-**Estimering för detta projekt:**
-- ~5000 ord content = ~7000 tokens
-- Översättning: ~$0.002 per körning
-- **Kostnad per månad:** ~$0.10 (om ni uppdaterar 50 gånger/månad)
-
-**= Praktiskt taget gratis! 🎉**
+Ingen API-kostnad eftersom Claude översätter direkt i chatten.
+Du betalar redan för Claude Code, så översättning ingår.
 
 ---
 
@@ -261,25 +279,25 @@ import heroContent from '@/content/[locale]/hero.json';
 
 ### Uppdatera Content (framöver)
 
-**Alternativ 1: Direkt i JSON**
-```bash
-1. Öppna content/sv/[fil].json
-2. Ändra text
-3. npm run translate
-4. git add . && git commit -m "Update content" && git push
+**Så enkelt som det kan bli:**
+
+```
+Paul: [Får email/txt från projektteamet med nya texter]
+
+Paul: "Hej Claude, här är uppdaterad text:
+[klistrar in]
+Uppdatera content och översätt till engelska"
+
+Claude:
+  ✓ Läser texten
+  ✓ Uppdaterar content/sv/*.json
+  ✓ Översätter till content/en/*.json
+  ✓ Committar & deployar
+
+Paul: "Tack! 🚀"
 ```
 
-**Alternativ 2: Via Claude**
-```
-Paul: "Ändra hero-titeln till 'FRAMTIDEN ÄR HÄR' och översätt"
-Claude: [Gör allt automatiskt]
-```
-
-**Alternativ 3: Bulk-uppdatering**
-```
-Paul: "Uppdatera alla metrics siffror och översätt"
-Claude: [Uppdaterar metrics.json för båda språk]
-```
+**Det är allt!** Ingen kod, inga scripts, inga API-nycklar.
 
 ---
 
@@ -333,7 +351,8 @@ Claude: [Uppdaterar metrics.json för båda språk]
 
 ---
 
-**Skapad:** 2025-01-XX
-**Status:** ⏳ Väntar på godkännande
-**Estimerad tid:** 6-7 timmar totalt
-**Kostnad:** ~$0.10/månad (Gemini API)
+**Skapad:** 2025-01-07
+**Uppdaterad:** 2025-01-07
+**Status:** 📋 Plan klar, implementeras vid senare tillfälle
+**Estimerad tid:** 5-6 timmar totalt
+**Kostnad:** $0 (Claude Code översätter direkt)
