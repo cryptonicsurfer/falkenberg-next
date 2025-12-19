@@ -27,32 +27,32 @@ const events: TimelineEvent[] = [
     status: 'completed'
   },
   {
-    year: '2024',
+    year: '2026',
     quarter: 'Q3',
     title: 'Andra Byggnaden Planeras',
     description: 'Planering av nästa fas med kontor och co-working spaces.',
-    status: 'in-progress'
+    status: 'planned'
   },
   {
-    year: '2025',
+    year: '2026',
     quarter: 'Q4',
-    title: 'Utbyggnad Startar',
-    description: 'Byggstart för ytterligare lokaler och mötesplatser.',
+    title: 'Marknadsföring',
+    description: 'Marknadsföring och sälj av projektet.',
     status: 'planned'
   },
-  {
-    year: '2026',
-    quarter: 'Q2',
-    title: 'Service & Restauranger',
-    description: 'Etablering av restauranger, caféer, gym och annan service.',
-    status: 'planned'
-  },
-  {
-    year: '2026',
-    title: 'Stadsdelen Växer',
-    description: 'Fortsatt expansion med fler kontors- och centrumbyggnader.',
-    status: 'planned'
-  }
+  // {
+  //   year: '2026',
+  //   quarter: 'Q2',
+  //   title: 'Service & Restauranger',
+  //   description: 'Etablering av restauranger, caféer, gym och annan service.',
+  //   status: 'planned'
+  // },
+  // {
+  //   year: '2026',
+  //   title: 'Stadsdelen Växer',
+  //   description: 'Fortsatt expansion med fler kontors- och centrumbyggnader.',
+  //   status: 'planned'
+  // }
 ];
 
 export default function ProgressTracker() {

@@ -24,6 +24,22 @@ export function DeveloperCallout() {
               Som vill bygga något större och lägga grunden för en spännande framtid – tillsammans
               med oss i Falkenberg.
             </p>
+
+            <div className="mt-6 p-6 bg-gradient-to-t from-yellow-bright to-purple-light rounded-lg shadow-xl">
+              <p className="text-sm md:text-base">
+                Vill du komma i kontakt med fastighetsexploatören som utvecklat Stationshus 2
+                och på gång med Stationshus 1 på NEXT-området, ring eller mejla Martin Eirefelt
+                på Rialto Properties.
+              </p>
+              <div className="mt-3 space-y-1">
+                <a href="mailto:martin@eirefelt.se" className="block text-sm md:text-base font-semibold hover:underline">
+                  martin@eirefelt.se
+                </a>
+                <a href="tel:+46703777827" className="block text-sm md:text-base font-semibold hover:underline">
+                  +46 703 777 827
+                </a>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </div>
@@ -261,6 +277,7 @@ export function Contact() {
 
             <div className="space-y-6 text-white">
               <div>
+                  <h3 className="text-xl md:text-2xl font-montserrat font-black mb-3">Kontaktuppgifter<br />Falkenbergs Kommun</h3> 
                 <h3 className="text-xl md:text-2xl font-montserrat font-black mb-2">Mattias Fornell</h3>
                 <p className="text-sm md:text-base">Näringslivsutvecklare<br/>Etablera & Expandera<br/>070-231 88 40<br/>mattias.fornell@falkenberg.se</p>
               </div>
@@ -288,7 +305,7 @@ export function Contact() {
             >
               <div className="relative w-full aspect-[5/6]">
                 <Image
-                  src="/images/contact-image.png"
+                  src="/images/contact-image2.png"
                   alt="Emma Carlström, Näringslivschef"
                   fill
                   className="rounded-t-lg object-cover"

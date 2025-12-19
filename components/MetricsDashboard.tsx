@@ -17,7 +17,7 @@ interface Metric {
 const metrics: Metric[] = [
   {
     value: 27000,
-    label: 'Kvadratmeter',
+    label: 'BTA',
     description: 'Total projektarea med färdig detaljplan',
     icon: Ruler
   },
@@ -47,7 +47,7 @@ const metrics: Metric[] = [
     icon: Train
   },
   {
-    value: 60,
+    value: 52,
     suffix: ' min',
     label: 'Till Göteborg',
     description: 'Med Västkustbanan',
