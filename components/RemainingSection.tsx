@@ -69,13 +69,15 @@ export function ReadySetBuild() {
                   Här planeras en levande mötesplats med kontor och co-working, plats för restauranger,
                   caféer, gym och annan service. Allt i direkt anslutning till Falkenbergs station.
                 </p>
-                <motion.p
-                  className="text-lg md:text-xl font-bold mt-6"
-                  whileHover={{ x: 10, color: '#A191B9' }}
-                  transition={{ duration: 0.3 }}
-                >
-                  falkenbergväxer.se →
-                </motion.p>
+                <a href="https://kommun.falkenberg.se/bygga-bo-och-miljo/falkenberg-vaxer" target="_blank" rel="noopener noreferrer">
+                  <motion.p
+                    className="text-lg md:text-xl font-bold mt-6"
+                    whileHover={{ x: 10, color: '#A191B9' }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    falkenbergväxer.se →
+                  </motion.p>
+                </a>
               </div>
             </AnimatedSection>
           </div>
@@ -287,13 +289,15 @@ export function Contact() {
                 <p className="text-sm md:text-base">Näringslivschef<br/>070-208 56 03<br/>emma.carlstrom@falkenberg.se</p>
               </div>
 
-              <motion.p
-                className="text-lg md:text-xl font-bold mt-6"
-                whileHover={{ x: 10 }}
-                transition={{ duration: 0.3 }}
-              >
-                falkenbergväxer.se →
-              </motion.p>
+              <a href="https://kommun.falkenberg.se/bygga-bo-och-miljo/falkenberg-vaxer" target="_blank" rel="noopener noreferrer">
+                <motion.p
+                  className="text-lg md:text-xl font-bold mt-6"
+                  whileHover={{ x: 10 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  falkenbergväxer.se →
+                </motion.p>
+              </a>
             </div>
           </AnimatedSection>
 
@@ -343,7 +347,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
         <div>
           <h3 className="text-xl md:text-3xl font-montserrat font-black text-dark-text">FALKENBERG NEXT</h3>
-          <p className="text-sm md:text-base font-montserrat font-black text-dark-text">falkenbergväxer.se</p>
+          <a href="https://kommun.falkenberg.se/bygga-bo-och-miljo/falkenberg-vaxer" target="_blank" rel="noopener noreferrer">
+            <p className="text-sm md:text-base font-montserrat font-black text-dark-text">falkenbergväxer.se</p>
+          </a>
         </div>
 
         <motion.div
