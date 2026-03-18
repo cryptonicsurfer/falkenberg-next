@@ -44,6 +44,12 @@ export default function Hero() {
               Därför söker vi fastighetsutvecklare som med kunskap, erfarenhet och driv vill hjälpa oss
               att flytta gränserna för vad som är möjligt för Falkenberg, Halland, Västkusten och Sverige.
             </p>
+            <a
+              href="#contact"
+              className="inline-block bg-yellow-bright text-dark-text px-6 py-3 rounded-full font-bold text-base hover:scale-105 transition-transform"
+            >
+              Kom i kontakt
+            </a>
           </div>
         </motion.div>
       </div>
@@ -78,6 +84,12 @@ export default function Hero() {
               Därför söker vi fastighetsutvecklare som med kunskap, erfarenhet och driv vill hjälpa oss
               att flytta gränserna för vad som är möjligt för Falkenberg, Halland, Västkusten och Sverige.
             </p>
+            <a
+              href="#contact"
+              className="inline-block bg-yellow-bright text-dark-text px-8 py-3 rounded-full font-bold text-lg mt-6 hover:scale-105 transition-transform"
+            >
+              Kom i kontakt
+            </a>
           </motion.div>
         </motion.div>
 

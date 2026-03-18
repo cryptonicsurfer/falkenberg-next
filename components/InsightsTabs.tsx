@@ -19,9 +19,9 @@ export default function InsightsTabs() {
     threshold: 0.1,
   });
 
-  const tabs: { id: string; label: string; icon: LucideIcon }[] = [
-    { id: 'overview', label: 'Översikt', icon: LayoutDashboard },
-    { id: 'news', label: 'Senaste Nytt', icon: Newspaper },
+  const tabs: { id: string; label: string; icon: LucideIcon; hidden?: boolean }[] = [
+    { id: 'overview', label: 'Översikt', icon: LayoutDashboard, hidden: true },
+    { id: 'news', label: 'Senaste Nytt', icon: Newspaper, hidden: true },
     { id: 'metrics', label: 'Fakta & Siffror', icon: TrendingUp },
   ];
 
@@ -42,10 +42,10 @@ export default function InsightsTabs() {
           </p>
         </motion.div>
 
-        {/* Two column layout: Image left, Tabs right */}
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
-          {/* Left: Static Image with sticky */}
-          <motion.div
+        {/* Full width layout for Fakta & Siffror */}
+        <div className="grid gap-8 md:gap-12 items-start">
+          {/* Hidden: Static Image (kept for when tabs are re-enabled) */}
+          {/* <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,9 +67,9 @@ export default function InsightsTabs() {
                 />
               </div>
             </Tilt>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Right: Tabs */}
+          {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -77,7 +77,7 @@ export default function InsightsTabs() {
           >
             {/* Tab Navigation */}
             <div className="flex justify-start gap-4 mb-8 flex-wrap">
-              {tabs.map((tab) => (
+              {tabs.filter(tab => !tab.hidden).map((tab) => (
                 <motion.button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id as TabType)}

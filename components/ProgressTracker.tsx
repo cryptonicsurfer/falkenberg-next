@@ -28,14 +28,12 @@ const events: TimelineEvent[] = [
   },
   {
     year: '2026',
-    quarter: 'Q3',
     title: 'Andra Byggnaden Planeras',
     description: 'Planering av nästa fas med kontor och co-working spaces.',
     status: 'planned'
   },
   {
     year: '2026',
-    quarter: 'Q4',
     title: 'Marknadsföring',
     description: 'Marknadsföring och sälj av projektet.',
     status: 'planned'
