@@ -42,10 +42,10 @@ export default function InsightsTabs() {
           </p>
         </motion.div>
 
-        {/* Full width layout for Fakta & Siffror */}
-        <div className="grid gap-8 md:gap-12 items-start">
-          {/* Hidden: Static Image (kept for when tabs are re-enabled) */}
-          {/* <motion.div
+        {/* Two column layout: Image left, Tabs right */}
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
+          {/* Left: Static Image with sticky */}
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,9 +67,9 @@ export default function InsightsTabs() {
                 />
               </div>
             </Tilt>
-          </motion.div> */}
+          </motion.div>
 
-          {/* Content */}
+          {/* Right: Tabs */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
