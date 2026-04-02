@@ -62,12 +62,8 @@ export function ReadySetBuild() {
             <AnimatedSection delay={0.2} direction="left">
               <div className="space-y-4">
                 <p className="text-base md:text-lg">
-                  Falkenberg NEXT omfattar 27 000 kvm med färdig detaljplan och generösa byggrätter
+                  Falkenberg NEXT omfattar 27 000 kvm BTA med färdig detaljplan och generösa byggrätter
                   för centrum- och kontorsbyggnader på upp till sju våningar.
-                </p>
-                <p className="text-base md:text-lg">
-                  Här planeras en levande mötesplats med kontor och co-working, plats för restauranger,
-                  caféer, gym och annan service. Allt i direkt anslutning till Falkenbergs station.
                 </p>
                 <a href="https://kommun.falkenberg.se/bygga-bo-och-miljo/falkenberg-vaxer" target="_blank" rel="noopener noreferrer">
                   <motion.p

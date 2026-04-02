@@ -37,12 +37,11 @@ export default function Hero() {
 
           <div className="space-y-4">
             <p className="text-base">
-              En byggnad är färdig, en annan planeras. Området kring stationen börjar ta form.
-              <strong> Falkenberg NEXT händer nu.</strong>
+              En byggnad är färdig. En annan planeras. Runt stationen växer något nytt fram.
+              <strong> Falkenberg NEXT är här.</strong> Och det händer nu.
             </p>
             <p className="text-base">
-              Därför söker vi fastighetsutvecklare som med kunskap, erfarenhet och driv vill hjälpa oss
-              att flytta gränserna för vad som är möjligt för Falkenberg, Halland, Västkusten och Sverige.
+              Bli vår nästa fastighetsutvecklare och var med och forma en levande mötesplats med kontor och co-working, plats för restauranger, caféer, gym och annan service.
             </p>
             <a
               href="#contact"
@@ -77,12 +76,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <p className="text-lg mb-4">
-              En byggnad är färdig, en annan planeras. Området kring stationen börjar ta form.
-              <strong> Falkenberg NEXT händer nu.</strong>
+              En byggnad är färdig. En annan planeras. Runt stationen växer något nytt fram.
+              <strong> Falkenberg NEXT är här.</strong> Och det händer nu.
             </p>
             <p className="text-lg">
-              Därför söker vi fastighetsutvecklare som med kunskap, erfarenhet och driv vill hjälpa oss
-              att flytta gränserna för vad som är möjligt för Falkenberg, Halland, Västkusten och Sverige.
+              Bli vår nästa fastighetsutvecklare och var med och forma en levande mötesplats med kontor och co-working, plats för restauranger, caféer, gym och annan service.
             </p>
             <a
               href="#contact"
