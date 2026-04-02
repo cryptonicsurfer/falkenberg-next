@@ -12,7 +12,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="relative w-full h-[50vh] min-h-[400px]"
+          className="relative w-full h-[70vh] min-h-[500px] bg-black"
         >
           <video
             autoPlay
@@ -20,7 +20,7 @@ export default function Hero() {
             loop
             playsInline
             poster="/images/hero-image.jpg"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain"
           >
             <source src="/images/hero-video.mp4" type="video/mp4" />
           </video>
@@ -105,7 +105,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            className="h-full relative min-h-[500px]"
+            className="h-full relative min-h-[600px] bg-purple-bg"
           >
             <video
               autoPlay
@@ -113,7 +113,7 @@ export default function Hero() {
               loop
               playsInline
               poster="/images/hero-image.jpg"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-contain"
             >
               <source src="/images/hero-video.mp4" type="video/mp4" />
             </video>
