@@ -8,7 +8,7 @@ Marketing/landing page for the Falkenberg NEXT urban development project.
 - **Styling**: Tailwind CSS 4
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **Deployment**: Vercel (auto-deploy on push to `main`)
+- **Deployment**: Vercel (manual deploy via `npx vercel --prod`)
 - **Repo**: `cryptonicsurfer/falkenberg-next`
 
 ## Project Structure
@@ -45,7 +45,8 @@ public/images/ → Static assets (hero image, maps, logos)
 ## Commands
 
 ```bash
-npm run dev    # Dev server with Turbopack
-npm run build  # Production build
-npm run lint   # ESLint
+npm run dev          # Dev server with Turbopack
+npm run build        # Production build
+npm run lint         # ESLint
+npx vercel --prod    # Deploy to production
 ```

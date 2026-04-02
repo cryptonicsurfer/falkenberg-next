@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
 
 export default function Hero() {
@@ -15,14 +14,16 @@ export default function Hero() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className="relative w-full h-[50vh] min-h-[400px]"
         >
-          <Image
-            src="/images/hero-image.jpg"
-            alt="Illustrationsbild av Falkenberg NEXT av White Arkitekter"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/images/hero-image.jpg"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/images/hero-video.mp4" type="video/mp4" />
+          </video>
         </motion.div>
 
         <motion.div
@@ -106,14 +107,16 @@ export default function Hero() {
             transition={{ duration: 1, ease: 'easeOut' }}
             className="h-full relative min-h-[500px]"
           >
-            <Image
-              src="/images/hero-image.jpg"
-              alt="Illustrationsbild av Falkenberg NEXT av White Arkitekter"
-              fill
-              className="object-cover transition-transform duration-500 hover:scale-105"
-              priority
-              sizes="60vw"
-            />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/images/hero-image.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/images/hero-video.mp4" type="video/mp4" />
+            </video>
           </motion.div>
         </Tilt>
       </div>
