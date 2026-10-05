@@ -42,6 +42,18 @@ public/images/ → Static assets (hero image, maps, logos)
 - **Typography**: Montserrat (headings), system font stack (body)
 - **Patterns**: Rounded cards, tilt effects (`react-parallax-tilt`), scroll-triggered animations
 
+## Domains & certificates
+
+Vercel project `falkenberg-next` serves `next.falkenberg.se` (canonical), plus `fbgnxt.se`,
+`www.fbgnxt.se` and `test2.fbgnxt.se`. `www.fbgnxt.se` is a CNAME to `next.falkenberg.se`, not
+directly to Vercel.
+
+Vercel renews the Let's Encrypt certs automatically, but it failed silently once: `www.fbgnxt.se`
+was expired 2026-07-08 → 2026-09-30. Fix was `vercel certs issue www.fbgnxt.se` (Paul runs it;
+check with `vercel certs ls`). All four names are now watched daily by `~/cert-watch.sh` on the
+VPS `glsfbg`, which alerts in Telegram below 14 days — see `../ops/security.md` → Certifikat.
+A new domain on this project must be added to `EXTRA_HOSTS` in `../ops/vps/cert-watch.sh`.
+
 ## Commands
 
 ```bash
